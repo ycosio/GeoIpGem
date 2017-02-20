@@ -1,0 +1,19 @@
+require 'httparty'
+
+class GeoIp
+
+  attr_accessor :url
+  attr_reader :json
+
+  def initialize(domain)
+    @url = domain.to_s
+    @json = get
+  end
+
+  def get
+    response = HTTParty.get("http://www.freegeoip.net/json/#{@url}")
+    response.parsed_response
+  end
+end
+
+
