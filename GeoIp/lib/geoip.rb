@@ -16,6 +16,7 @@ class GeoIp
     response = HTTParty.get("http://www.freegeoip.net/json/#{@domain}")
     @hash = response.parsed_response
     @response.set(@hash)
+    @response
   end
 
   def to_obj

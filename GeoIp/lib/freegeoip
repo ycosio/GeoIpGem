@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require_relative "geoip"
+require_relative "Response"
+
+if ARGV[0] == "get"
+  geo= GeoIp.new(ARGV[1], Response.new)
+  geo.get
+  p geo
+else
+  "unrecognized option!!!"
+end
