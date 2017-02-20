@@ -3,8 +3,8 @@ require_relative 'Response'
 
 class GeoIp
 
-  attr_accessor :url
-  attr_reader :json
+  attr_accessor :url, :response
+  attr_reader :hash
 
   def initialize(domain, response)
     @domain = domain
@@ -19,6 +19,7 @@ class GeoIp
 
   def to_obj
     @response.set(@hash)
+    @response
   end
 end
 
