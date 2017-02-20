@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = "JSON from geoip"
   s.authors     = ["Yair Cosio", "Yuri Delgado"]
   s.email       = ['ycosio1310@gmail.com', 'yuri.delgado@tangosource.com']
-  s.files       = ["lib/geoip.rb"]
+  s.files       = ["lib/geoip.rb","lib/Response.rb"]
   s.homepage    = 'http://rubygems.org/gems/hola'
   s.license     = 'MIT'
 end
