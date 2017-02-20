@@ -3,10 +3,10 @@
 require_relative "geoip"
 require_relative "Response"
 
-if ARGV[0] == "get"
-  geo= GeoIp.new(ARGV[1], Response.new)
+if ARGV[0] == "get" && ARGV[1].to_s.length > 0
+  geo= GeoIp.new(ARGV[1].to_s, Response.new)
   geo.get
   p geo
 else
-  "unrecognized option!!!"
+  puts "wrong argumrnts!!!"
 end
