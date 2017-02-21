@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require "geoip_ts"
+
+if ARGV[0] == "get" && ARGV[1].to_s.length > 0
+  geo= GeoIp.get(ARGV[1].to_s)
+  p geo
+else
+  puts "wrong argumrnts!!!"
+end

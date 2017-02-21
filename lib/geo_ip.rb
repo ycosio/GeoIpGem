@@ -1,6 +1,11 @@
-#require 'httparty'
-#require_relative 'Response'
+require 'httparty'
+require_relative '../geoip/response'
+
 class GeoIp
+
+  def self.get(remote)
+    new(remote,Response.new).get
+  end
 
   attr_accessor :url, :response
   attr_reader :hash
