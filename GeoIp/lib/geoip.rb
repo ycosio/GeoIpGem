@@ -1,6 +1,5 @@
-require 'httparty'
-require_relative 'Response'
-
+#require 'httparty'
+#require_relative 'Response'
 class GeoIp
 
   attr_accessor :url, :response
