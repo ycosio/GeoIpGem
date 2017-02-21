@@ -9,8 +9,6 @@ config.each do |item|
     puts "gem required found #{gdep}... continue\n\n"
   else
     abort "Requirement '#{gdep}' not satisfied; install gem please...\n\n"
-#    return false
-#    abort
   end
 end
 
