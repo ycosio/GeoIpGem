@@ -1,4 +1,4 @@
-module Geoip
+  module GeoIp
 
   class Response
     attr_accessor :ip,:country_code, :country_name,
