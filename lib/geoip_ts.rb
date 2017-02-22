@@ -1,8 +1,8 @@
 require 'httparty'
-require "geo_ip/response"
-require "geo_ip/version"
+require "geoip_ts/response"
+require "geoip_ts/version"
 
-module GeoIp
+module GeoipTs
   # Your code goes here...
 
   def self.get(remote)

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'geo_ip/version'
+require 'geoip_ts/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "geoip_ts"
-  spec.version       = GeoIp::VERSION
+  spec.version       = GeoipTs::VERSION
   spec.authors       = ["Yuri Delgado","Yair Cosio"]
   spec.email         = ["ymdelgado@hotmail.com", "yair.cosio@tangosource.com"]
 

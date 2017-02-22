@@ -1,3 +1,3 @@
-  module GeoIp
+module GeoipTs
   VERSION = "0.1.0"
 end
